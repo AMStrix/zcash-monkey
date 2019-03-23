@@ -8,12 +8,14 @@ An interactive console for your zcash node.
 
 - check balances
 - send funds
+- HD t-address derivation and adding to wallet (viewing/xpub only)
 
 ### Requires
 
-- tested on nodejs v8.13.8
-- yarn package manager
-- access to a zcash node
+- OS: tested on macOS and linux
+- [nodejs](https://nodejs.org/en/download/) tested with v8.13.8 & v10.13.0
+- [yarn](https://yarnpkg.com/en/docs/install) package manager
+- access to a [zcash node](https://zcash.readthedocs.io)
 
 ### Setup and run
 
