@@ -1,6 +1,5 @@
-import { randomBytes, createHmac } from "crypto";
+import { createHmac } from "crypto";
 import bitcore from "zcash-bitcore-lib";
-import env from "./env";
 
 const {
   HDPublicKey,
@@ -49,11 +48,11 @@ export function chainToNetwork(chain: string) {
 
 // NOTE: these override the hdkey (xpub/xprv) network
 export function deriveTransparentAddress(
-  xprv: string,
+  xpub: string,
   index: number,
   network: any
 ) {
-  const root = new HDPublicKey(xprv);
+  const root = new HDPublicKey(xpub);
   const child = root.derive(`m/0/${index}`);
   const address = new Address(child.publicKey, network);
   return address.toString();
