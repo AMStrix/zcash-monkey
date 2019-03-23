@@ -2,7 +2,7 @@
   "name": "zcash-monkey",
   "version": "1.0.0",
   "engines": {
-    "node": "8.13.0"
+    "node": ">=8.13.0"
   },
   "main": "index.js",
   "license": "MIT",
@@ -24,10 +24,8 @@
   },
   "dependencies": {
     "@types/configstore": "^4.0.0",
-    "@types/dotenv": "^6.1.0",
     "@types/terminal-kit": "1.26.0",
     "configstore": "^4.0.0",
-    "dotenv": "^6.1.0",
     "stdrpc": "1.0.0",
     "terminal-kit": "^1.27.0",
     "zcash-bitcore-lib": "0.13.20-rc3"
