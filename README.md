@@ -25,3 +25,6 @@ cd zcash-monkey
 yarn
 yarn dev
 ```
+
+### Show me!
+![zcash-monkey-demo](https://amstrix.github.io/images/zcash-monkey-demo.gif)
