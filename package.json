@@ -1,0 +1,35 @@
+{
+  "name": "zcash-monkey",
+  "version": "1.0.0",
+  "engines": {
+    "node": "8.13.0"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn ts-node src/index.ts",
+    "build": "tsc -p .",
+    "test": "NODE_ENV=test yarn ts-mocha --no-colors src/**/*.spec.ts",
+    "start": "node ./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/expect": "^1.20.3",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.11",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.7",
+    "ts-mocha": "^2.0.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.1"
+  },
+  "dependencies": {
+    "@types/configstore": "^4.0.0",
+    "@types/dotenv": "^6.1.0",
+    "@types/terminal-kit": "1.26.0",
+    "configstore": "^4.0.0",
+    "dotenv": "^6.1.0",
+    "stdrpc": "1.0.0",
+    "terminal-kit": "^1.27.0",
+    "zcash-bitcore-lib": "0.13.20-rc3"
+  }
+}
