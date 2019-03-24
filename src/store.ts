@@ -52,8 +52,8 @@ interface OperationMap {
   [index: string]: Operation;
 }
 
-// ux state
-const state = {
+// state
+const STATE = {
   initializing: false,
   status: "",
   error: "",
@@ -113,8 +113,9 @@ const state = {
 
   log: [] as string[]
 };
-export type State = typeof state;
+export type State = typeof STATE;
 
+const state: State = JSON.parse(JSON.stringify(STATE));
 const cloneState = () => JSON.parse(JSON.stringify(state));
 
 // ux state events

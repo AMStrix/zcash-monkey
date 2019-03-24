@@ -607,6 +607,9 @@ const renderSendingCoins = async (state: State, prev: State) => {
     if (latestOp.memo) {
       pl("memo   ", decodeHexMemo(latestOp.memo));
     }
+    if (latestOp.txid) {
+      pl("txid   ", latestOp.txid);
+    }
   }
   term.moveTo(x, ++y);
   if (prev.isWatchOperation && !state.isWatchOperation) {
